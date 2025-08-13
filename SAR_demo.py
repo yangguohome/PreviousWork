@@ -55,7 +55,7 @@ def mol_to_graph(smiles):
 graph_data = [mol_to_graph(smi) for smi in df['standard_smiles']]
 graph_data = [g for g in graph_data if g is not None]
 
-# 4. GNN Encoder (basic example)
+# GNN Encoder (basic example)
 class GNN(torch.nn.Module):
     def __init__(self):
         super().__init__()
